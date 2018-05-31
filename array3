@@ -1,0 +1,47 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+#define MAXLINE 10
+
+int i,c,len,y,x=0;
+char pa[MAXLINE+1];
+char sa[MAXLINE+1];
+
+
+int main()
+{
+printf("Enter string\n");
+
+while ((c=getchar()) != '\n')
+
+    sa[i++]=c;
+//    printf("%s",sa);
+    
+    i=0;
+    printf("\nenter search string\n");
+    
+    while ((c=getchar()) != '\n')
+    pa[i++]=c;
+    
+    //printf("\n%s\n",pa);
+    for (i=0;i<MAXLINE && pa[i]; i++)
+    {
+        
+    
+    while (sa[y])
+    {
+        if (sa[y] == pa[i])
+        printf("1");
+        else
+        printf("0");
+        y++;
+    }
+    y=0;
+    }
+}
